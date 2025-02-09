@@ -75,6 +75,8 @@ CREATE TABLE Employee (
      salary INT
 );
 
+SELECT * FROM Employee;
+
 INSERT INTO Employee VALUES ('3', 'Brad', NULL, '4000');
 INSERT INTO Employee VALUES ('1', 'John', '3', '1000');
 INSERT INTO Employee VALUES ('2', 'Dan', '3', '2000');
@@ -87,6 +89,14 @@ CREATE TABLE Bonus (
 
 INSERT INTO Bonus (empid, bonus) VALUES ('2', '500');
 INSERT INTO Bonus (empId, bonus) VALUES ('4', '2000');
+
+SELECT * FROM Bonus;
+
+/*
+Write a solution to report the name and bonus amount of each employee with a bonus less than 1000.
+
+Return the result table in any order.
+*/
 
 # SQL Query
 
@@ -106,5 +116,3 @@ OR
 
 
 
-
-    
