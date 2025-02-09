@@ -83,15 +83,11 @@ CREATE TABLE Sales (
 INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('1', '100', '2008', '10', '5000');
 INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('2', '100', '2009', '12', '5000');
 INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('7', '200', '2011', '15', '9000');
-
-SELECT * FROM Sales;
     
 CREATE TABLE Product (
      product_id INT,
      product_name VARCHAR(250)
 );
-
-SELECT * FROM Product;
 
 INSERT INTO Product (product_id, product_name) VALUES ('100', 'Nokia');
 INSERT INTO Product (product_id, product_name) VALUES ('200', 'Apple');
@@ -102,7 +98,6 @@ Write a solution to report the product_name, year, and price for each sale_id in
 
 Return the resulting table in any order.
 
-The result format is in the following example.
 */
 
 # SQL Query
