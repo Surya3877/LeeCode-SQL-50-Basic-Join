@@ -69,7 +69,10 @@ From sale_id = 2, we can conclude that Nokia was sold for 5000 in the year 2009.
 From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
 */
 
- CREATE TABLE Sales (
+CREATE DATABASE IF NOT EXISTS 1068_Product_Sales_Analysis_I;
+USE 1068_Product_Sales_Analysis_I;
+
+CREATE TABLE Sales (
     sales_id INT,
     product_id INT,
     year INT,
@@ -93,14 +96,6 @@ SELECT * FROM Product;
 INSERT INTO Product (product_id, product_name) VALUES ('100', 'Nokia');
 INSERT INTO Product (product_id, product_name) VALUES ('200', 'Apple');
 INSERT INTO Product (product_id, product_name) VALUES ('300', 'Samsung');
-
-/*
-Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
-
-Return the resulting table in any order.
-
-The result format is in the following example.
-*/
 
 # SQL Query
 
