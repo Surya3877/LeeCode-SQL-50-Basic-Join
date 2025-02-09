@@ -97,6 +97,14 @@ INSERT INTO Product (product_id, product_name) VALUES ('100', 'Nokia');
 INSERT INTO Product (product_id, product_name) VALUES ('200', 'Apple');
 INSERT INTO Product (product_id, product_name) VALUES ('300', 'Samsung');
 
+/*
+Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
+
+Return the resulting table in any order.
+
+The result format is in the following example.
+*/
+
 # SQL Query
 
 SELECT
