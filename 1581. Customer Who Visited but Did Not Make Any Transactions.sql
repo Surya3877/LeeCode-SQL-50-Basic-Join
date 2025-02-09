@@ -108,6 +108,12 @@ INSERT INTO Transactions (transaction_id, visit_id, amount) VALUES ('13', '2', '
 
 SELECT * FROM Transactions;
 
+/*
+Write a solution to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits.
+
+Return the result table sorted in any order.
+*/
+
 # SQL Query
 
 SELECT 
