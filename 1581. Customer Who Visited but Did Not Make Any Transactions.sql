@@ -75,10 +75,12 @@ Customer with id = 54 visited the mall three times. During 2 visits they did not
 Customer with id = 96 visited the mall once and did not make any transactions.
 As we can see, users with IDs 30 and 96 visited the mall one time without making any transactions. Also, user 54 visited the mall twice and did not make any transactions.
 */
+ 
 CREATE TABLE Visits (
     visit_id INT,
     customer_id INT
 );
+
 INSERT INTO Visits (visit_id, customer_id) VALUES ('1', '23');
 INSERT INTO Visits (visit_id, customer_id) VALUES ('2', '9');
 INSERT INTO Visits (visit_id, customer_id) VALUES ('4', '30');
@@ -94,6 +96,7 @@ CREATE TABLE Transactions (
     visit_id INT,
     amount INT
 );
+
 INSERT INTO Transactions (transaction_id, visit_id, amount) VALUES ('2', '5', '310');
 INSERT INTO Transactions (transaction_id, visit_id, amount) VALUES ('3', '5', '300');
 INSERT INTO Transactions (transaction_id, visit_id, amount) VALUES ('9', '5', '200');
