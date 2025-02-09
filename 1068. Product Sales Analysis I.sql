@@ -29,14 +29,12 @@ Table: Product
 product_id is the primary key (column with unique values) of this table.
 Each row of this table indicates the product name of each product.
  
-
 Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
 
 Return the resulting table in any order.
 
 The result format is in the following example.
 
- 
 
 Example 1:
 
@@ -69,6 +67,39 @@ Explanation:
 From sale_id = 1, we can conclude that Nokia was sold for 5000 in the year 2008.
 From sale_id = 2, we can conclude that Nokia was sold for 5000 in the year 2009.
 From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
+*/
+
+ CREATE TABLE Sales (
+    sales_id INT,
+    product_id INT,
+    year INT,
+    quantity INT,
+    price INT
+);
+
+INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('1', '100', '2008', '10', '5000');
+INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('2', '100', '2009', '12', '5000');
+INSERT INTO Sales (sales_id, product_id, year, quantity, price) VALUES ('7', '200', '2011', '15', '9000');
+
+SELECT * FROM Sales;
+    
+CREATE TABLE Product (
+     product_id INT,
+     product_name VARCHAR(250)
+);
+
+SELECT * FROM Product;
+
+INSERT INTO Product (product_id, product_name) VALUES ('100', 'Nokia');
+INSERT INTO Product (product_id, product_name) VALUES ('200', 'Apple');
+INSERT INTO Product (product_id, product_name) VALUES ('300', 'Samsung');
+
+/*
+Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
+
+Return the resulting table in any order.
+
+The result format is in the following example.
 */
 
 # SQL Query
