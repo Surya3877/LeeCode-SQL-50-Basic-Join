@@ -63,6 +63,12 @@ INSERT INTO Weather (id, recordDate, temperature) VALUES ('4', '2015-01-04', '30
 
 SELECT * FROM Weather;
 
+/*
+Write a solution to find all dates' id with higher temperatures compared to its previous dates (yesterday).
+
+Return the result table in any order.
+*/
+
 # SQL Query
 
 SELECT
