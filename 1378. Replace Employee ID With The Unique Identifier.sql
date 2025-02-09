@@ -85,8 +85,6 @@ INSERT INTO Employees (id, name) VALUES ("11", "Meir");
 INSERT INTO employees (id, name) VALUES ("90", "Winston");
 INSERT INTO employees (id, name) VALUES ("3", "Jonathan");
 
-SELECT * FROM employees;
-
 CREATE TABLE EmployeeUNI (
     id INT,
     unique_id INT
@@ -95,8 +93,6 @@ CREATE TABLE EmployeeUNI (
 insert into EmployeeUNI (id, unique_id) values ('3', '1');
 insert into EmployeeUNI (id, unique_id) values ('11', '2');
 insert into EmployeeUNI (id, unique_id) values ('90', '3');
-
-SELECT * FROM employeeUNI;
 
 /*
 Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
