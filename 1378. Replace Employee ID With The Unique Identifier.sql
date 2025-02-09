@@ -69,8 +69,34 @@ Alice and Bob do not have a unique ID, We will show null instead.
 The unique ID of Meir is 2.
 The unique ID of Winston is 3.
 The unique ID of Jonathan is 1.
-
 */
+
+CREATE DATABASE IF NOT EXISTS 1378_Replace_Employee_ID_With_The_Unique_Identifier;
+USE 1378_Replace_Employee_ID_With_The_Unique_Identifier;
+
+CREATE TABLE Employees (
+    id INT,
+    name VARCHAR(50)
+);
+
+INSERT INTO Employees (id, name) VALUES ("1", "Alice");
+INSERT INTO Employees (id, name) VALUES ("7", "Bob");
+INSERT INTO Employees (id, name) VALUES ("11", "Meir");
+INSERT INTO employees (id, name) VALUES ("90", "Winston");
+INSERT INTO employees (id, name) VALUES ("3", "Jonathan");
+
+SELECT * FROM employees;
+
+CREATE TABLE EmployeeUNI (
+    id INT,
+    unique_id INT
+);
+
+insert into EmployeeUNI (id, unique_id) values ('3', '1');
+insert into EmployeeUNI (id, unique_id) values ('11', '2');
+insert into EmployeeUNI (id, unique_id) values ('90', '3');
+
+SELECT * FROM employeeUNI;
 
 # SQL Query
 SELECT 
