@@ -97,7 +97,6 @@ INSERT INTO Product (product_id, product_name) VALUES ('300', 'Samsung');
 Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
 
 Return the resulting table in any order.
-
 */
 
 # SQL Query
