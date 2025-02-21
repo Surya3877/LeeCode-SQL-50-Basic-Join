@@ -46,6 +46,7 @@ Output:
 | John |
 +------+
 */
+ 
 CREATE DATABASE IF NOT EXISTS Managers_with_at_Least_5_Direct_Reports;
 USE Managers_with_at_Least_5_Direct_Reports;
 
